@@ -1,4 +1,4 @@
-const Listado = () =>{
+export const Listado = () =>{
     return(
         <>
 
@@ -6,4 +6,3 @@ const Listado = () =>{
     )
 }
 
-export default Listado

@@ -1,4 +1,4 @@
-const Formulario = () =>{
+export const Formulario = ({citas, setcitas}) =>{
     return(
         <>
 
@@ -6,4 +6,3 @@ const Formulario = () =>{
     );
 }
 
-export default Formulario
