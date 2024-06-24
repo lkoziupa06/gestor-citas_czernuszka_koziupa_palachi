@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import  React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Formulario } from './views/Formulario';
@@ -13,7 +13,7 @@ function App() {
           <Formulario citas = {citas} setcitas={setCitas}/>
         </div>
         <div className="one-half column">
-          <Listado/>
+          <Listado citas = {citas}/>
         </div>
       </div>
     </>

@@ -4,8 +4,14 @@ import Form from "../../components/Form";
 export const Formulario = ({citas, setcitas}) =>{
     
     function addCita(form){
-        const { mascota, dueno, fecha, hora, sintomas } = form;
-
+        const {
+            mascota = 'Desconocido',
+            dueno = 'Desconocido',
+            fecha = 'Fecha no especificada',
+            hora = 'Hora no especificada',
+            sintomas = 'No hay síntomas especificados'
+          } = form || {}; 
+        
         setcitas(citas.concat({
             mascota: mascota,
             dueno: dueno,
@@ -18,7 +24,7 @@ export const Formulario = ({citas, setcitas}) =>{
     return(
         <>
             <h2>Agendar Cita</h2>
-            <Form funcion={addCita()}/>
+            <Form funcion={addCita}/>
         </>
     );
 }

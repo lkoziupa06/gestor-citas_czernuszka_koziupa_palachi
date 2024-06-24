@@ -1,7 +1,7 @@
 import Cita from "../../components/Cita";
 import { useEffect } from "react";
 
-export const Listado = ({citas = []}) =>{
+export const Listado = ({citas}) =>{
     
     useEffect(() => {
         console.log('Las citas se modificaron:', citas);

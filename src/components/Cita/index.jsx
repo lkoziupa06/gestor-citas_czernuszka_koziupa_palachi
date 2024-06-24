@@ -1,4 +1,4 @@
-import Boton from "../Boton"
+
 import Item from "../Item"
 
 const Cita = ({cita, key}) =>{
@@ -9,6 +9,7 @@ const Cita = ({cita, key}) =>{
             <Item item="Fecha" contenido={cita.fecha}/>
             <Item item="Hora" contenido={cita.hora}/>
             <Item item="Sintomas" contenido={cita.sintomas}/>
+            <Item item="Key" contenido={key}/>
         </>
     )
 }
