@@ -1,15 +1,14 @@
 import Boton from "../Boton"
 import Item from "../Item"
 
-const Cita = () =>{
+const Cita = ({cita, key}) =>{
     return(
         <>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Boton/>
+            <Item item="Mascota" contenido={cita.mascota}/>
+            <Item item="Dueño" contenido={cita.dueno}/>
+            <Item item="Fecha" contenido={cita.fecha}/>
+            <Item item="Hora" contenido={cita.hora}/>
+            <Item item="Sintomas" contenido={cita.sintomas}/>
         </>
     )
 }

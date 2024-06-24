@@ -1,4 +1,4 @@
-import {useState} from 'React'; 
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Formulario } from './views/Formulario';
@@ -8,11 +8,11 @@ function App() {
   const [citas, setCitas] = useState([]);
   return (
     <>
-      <div class="row">
+      <div className="row">
         <div class="one-half column">
           <Formulario citas = {citas} setcitas={setCitas}/>
         </div>
-        <div class="one-half column">
+        <div className="one-half column">
           <Listado/>
         </div>
       </div>
