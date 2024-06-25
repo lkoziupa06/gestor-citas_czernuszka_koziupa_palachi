@@ -1,7 +1,8 @@
 
+import Boton from "../Boton"
 import Item from "../Item"
 
-const Cita = ({cita, key}) =>{
+const Cita = ({cita, index}) =>{
     return(
         <>
             <Item item="Mascota" contenido={cita.mascota}/>
