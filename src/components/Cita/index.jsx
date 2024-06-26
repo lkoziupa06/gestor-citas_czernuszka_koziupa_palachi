@@ -11,7 +11,7 @@ const Cita = ({cita, key, funcion}) =>{
             <Item item="Fecha" contenido={cita.fecha}/>
             <Item item="Hora" contenido={cita.hora}/>
             <Item item="Sintomas" contenido={cita.sintomas}/>
-            <Boton name="Eliminar Cita" type="button" onClick={funcion}/>
+            <Boton name="Eliminar Cita" type="button" onClick={funcion} id={cita.mascota}/>
         </>
     )
 }

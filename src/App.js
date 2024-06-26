@@ -4,16 +4,18 @@ import './App.css';
 import { Formulario } from './views/Formulario';
 import { Listado } from './views/Listado';
 
+
 function App() {
   const [citas, setCitas] = useState([]);
+
   return (
     <>
       <div className="row">
         <div class="one-half column">
-          <Formulario citas = {citas} setcitas={setCitas}/>
+          <Formulario citas = {citas} setCitas={setCitas}/>
         </div>
         <div className="one-half column">
-          <Listado citas = {citas} setcitas={setCitas}/>
+          <Listado citas = {citas} setCitas={setCitas}/>
         </div>
       </div>
     </>

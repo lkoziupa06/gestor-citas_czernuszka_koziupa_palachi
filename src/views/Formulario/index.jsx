@@ -1,7 +1,7 @@
 
 import Form from "../../components/Form";
 
-export const Formulario = ({citas, setcitas}) =>{
+export const Formulario = ({citas, setCitas}) =>{
     
     function addCita(form){
         const {
@@ -12,7 +12,7 @@ export const Formulario = ({citas, setcitas}) =>{
             sintomas = 'No hay síntomas especificados'
           } = form || {}; 
         
-        setcitas(citas.concat({
+        setCitas(citas.concat({
             mascota: mascota,
             dueno: dueno,
             fecha: fecha,
