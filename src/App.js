@@ -13,7 +13,7 @@ function App() {
           <Formulario citas = {citas} setcitas={setCitas}/>
         </div>
         <div className="one-half column">
-          <Listado citas = {citas}/>
+          <Listado citas = {citas} setcitas={setCitas}/>
         </div>
       </div>
     </>

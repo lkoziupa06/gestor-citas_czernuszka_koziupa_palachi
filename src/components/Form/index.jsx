@@ -34,7 +34,7 @@ const Form = ({funcion}) =>{
                 <Input type="time" name="hora" placeholder=""/>
                 <Label campo="sintomas" nombre="Síntomas" />
                 <textarea name="sintomas" id="sintomas"></textarea>
-                <Boton name="Enviar"/>
+                <Boton name="Enviar" type="submit" />
             </form>
         </>
     )

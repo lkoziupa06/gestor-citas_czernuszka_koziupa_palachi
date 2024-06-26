@@ -1,6 +1,7 @@
-const Boton = ({nombre, onClick}) =>{
+
+const Boton = ({nombre, onClick, type}) =>{
     const handleClick = onClick ? onClick : () =>{};
-    return <button class="btn btn-primary mb-3" type="button" onClick={onClick} > {nombre}</button>
+    return <button class="btn btn-primary mb-3" type={type} onClick={handleClick} > {nombre}</button>
 }
 
 export default Boton
