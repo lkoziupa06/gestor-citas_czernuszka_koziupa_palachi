@@ -8,23 +8,21 @@ export const Listado = ({citas, setCitas}) => {
       }, [citas]);
     
     const eliminarCita = (target) =>{
-        console.log(target.target.id);
         if (window.confirm('¿Quieres eliminar esta cita?')) {
             handleDelete(target);
-            
         }
     }
       
     const handleDelete = (target) =>{
-        let mascota = target.target.id;
-        const arrayActualizado = citas.filter(cita => cita.mascota !== mascota);
+        let index = target.target.id;
+        const arrayActualizado = citas.filter(cita => cita.index !== index);
         setCitas(arrayActualizado);
     }
     return(
         <>
             <h2>Listado de citas</h2>
-            {citas.map((cita, index) => (
-                <Cita cita={cita} key={index} funcion={eliminarCita}/>
+            {citas.map((cita, key) => (
+                <Cita cita={cita} key={key} funcion={eliminarCita}/>
             ))}
         </>
     )

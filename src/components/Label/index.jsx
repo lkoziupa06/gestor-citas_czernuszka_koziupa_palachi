@@ -1,4 +1,4 @@
-const Label = ({campo, nombre}) =>{
-    return <label for={campo} className="">{nombre}</label>
+const Label = ({nombre}) =>{
+    return <label className="">{nombre}</label>
 }
 export default Label

@@ -5,11 +5,12 @@ export const Formulario = ({citas, setCitas}) =>{
     
     function addCita(form){
         const {
-            mascota = 'Desconocido',
-            dueno = 'Desconocido',
-            fecha = 'Fecha no especificada',
-            hora = 'Hora no especificada',
-            sintomas = 'No hay síntomas especificados'
+            mascota = '',
+            dueno = '',
+            fecha = '',
+            hora = '',
+            sintomas = '',
+            index = ''
           } = form || {}; 
         
         setCitas(citas.concat({
@@ -17,7 +18,8 @@ export const Formulario = ({citas, setCitas}) =>{
             dueno: dueno,
             fecha: fecha,
             hora: hora,
-            sintomas: sintomas
+            sintomas: sintomas,
+            index: index
         }))
     }
 
