@@ -32,7 +32,11 @@ export const Listado = ({citas, setCitas}) =>{
                 <Cita cita={cita} key={index} funcion={eliminarCita}/>
             ))}
 
-            {showModal && <Modal titulo="¿Queres eliminar esta cita?" setter={(value) =>
+            {showModal && 
+            
+            <Modal 
+                titulo="¿Queres eliminar esta cita?" 
+                setter={(value) =>
                 {
                     if(value){
                         handleDelete(citaAELiminar);
