@@ -28,7 +28,7 @@ const Form = ({funcion}) =>{
 
     return(
         <>
-            <form id="formCita" onSubmit={handleSubmit}>
+            <form id="formCita" className="form mb-5" onSubmit={handleSubmit}>
                 <Label nombre="Nombre mascota" />
                 <Input type="text" name="mascota" placeholder="Nombre mascota"/>
                 <Label nombre="Nombre dueño" />
@@ -40,7 +40,7 @@ const Form = ({funcion}) =>{
                 <Label nombre="Síntomas" />
                 <textarea name="sintomas" id="sintomas"></textarea>
                 <Input type="hidden" name="index" value={index}/>
-                <Boton name="Enviar" type="submit" />
+                <Boton nombre="Agregar cita" type="submit" />
             </form>
         </>
     )

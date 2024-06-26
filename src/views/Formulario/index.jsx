@@ -25,7 +25,7 @@ export const Formulario = ({citas, setCitas}) =>{
 
     return(
         <>
-            <h2>Agendar Cita</h2>
+            <h2>AGENDAR CITA</h2>
             <Form funcion={addCita}/>
         </>
     );

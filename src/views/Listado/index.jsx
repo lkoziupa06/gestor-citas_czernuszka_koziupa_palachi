@@ -20,7 +20,7 @@ export const Listado = ({citas, setCitas}) => {
     }
     return(
         <>
-            <h2>Listado de citas</h2>
+            <h2>LISTADO DE CITAS</h2>
             {citas.map((cita, key) => (
                 <Cita cita={cita} key={key} funcion={eliminarCita}/>
             ))}

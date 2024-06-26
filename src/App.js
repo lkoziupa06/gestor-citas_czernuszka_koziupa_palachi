@@ -10,8 +10,9 @@ function App() {
 
   return (
     <>
+      <h1>ADMINISTRADOR DE CITAS</h1>
       <div className="row">
-        <div class="one-half column">
+        <div className="one-half column">
           <Formulario citas = {citas} setCitas={setCitas}/>
         </div>
         <div className="one-half column">
